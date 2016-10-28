@@ -1,0 +1,624 @@
+@charset "utf-8";
+html { height:100%;}
+
+body  {
+	font-family: Trebuchet MS, Myriad, Myriad Pro, Arial, sans-serif;
+	font-size:14px;
+	background: #c7c9c0;
+	padding: 0;
+	margin:0;
+	height:100%;
+	width:100%;
+	text-align: center; /* For IE */
+	outline:0;
+	}
+#contentArea {
+	width:90%;
+	margin-left:auto;
+	margin-right:auto;
+    clear:both;
+	background-color:#FFFFFF;
+	border-left:1px solid #FFFFFF;
+	border-right:1px solid #FFFFFF;
+	border-bottom:1px solid #FFFFFF;
+	}
+
+/************************************************************************************************
+
+Header Menu and Alignment Classes and Styles
+
+************************************************************************************************/
+
+#navBox {
+	display:inline-block;
+	white-space:nowrap;
+	min-width:1000px;
+	width:100%;
+	background-color:#dfddc9;
+	}
+
+#searchBoxArea {
+	padding:0;
+	padding-left:5px;
+	margin:0;
+	width:345px;
+	float:right;
+	text-align:left;
+	background-color:#c4c5b6;
+	height:29px;
+	display:block;
+	position:relative;
+	border-left:1px solid white;
+}
+
+#navcontainer {
+	width:100%;
+	height:32px;
+	background-image:url(graphics/header/navBarBG.gif);
+	background-repeat:repeat-x;
+	border-top:1px solid #FFFFFF;
+	border-bottom: 3px solid #cd9a29;
+}
+
+#navcontainer ul {
+	padding-left: 0;
+	margin: 0;
+	color: White;
+	width: 1000px;
+	font-family: Calibri, Myriad Pro, Myriad, Helvetica, sans-serif;
+	font-size:13px;
+	letter-spacing:1px;
+	text-transform:uppercase;
+}
+
+#navcontainer ul li { 
+	display:block;
+	white-space:nowrap; 
+	float:left;
+}
+
+#navcontainer ul li a.navBarButton {
+	padding:8px;
+	color: White;
+	text-decoration: none;
+	float: left;
+	border-right: 2px solid #616161;
+	border-right-style:groove;
+}
+
+#navcontainer ul li a:hover, #navcontainer ul li a:hover img {
+	background-image:url(graphics/header/navBarBG_over.gif);
+	background-repeat:repeat-x;
+}
+
+#navcontainer ul li a img {
+	padding:0;
+	margin:0;
+	border:0;
+	text-decoration: none;
+	float: left;
+	border-right: 2px solid #616161;
+	border-right-style:groove;
+	}
+
+#googleWaterfallMap img { max-width: none !important; }
+
+/***********************************************************************************************/
+
+a { color:#003399;}
+#sidebar a { color:#ffea00;}
+.nextLetterLink a { color:#FFFFFF; }
+a:visited { color:#003399; }
+#sidebar a:visited { color:#ffea00;}
+.nextLetterLink a:visited { color:#FFFFFF; }
+a:hover { color:#CC9900;}
+#sidebar a:hover { color:#FFCC00; }
+a:active { color:#CC9900;}
+#sidebar a:active { color:#FFCC00;}
+.nextLetterLink a:active { color:#FFFFFF; }
+
+
+h1 {
+	font-family: Geometr415 Md BT, Levenim MT, Aharoni, TW Cen MT, Trebuchet MS, Myriad, Verdana, Arial, sans-serif;
+	font-size:24px;
+	text-transform:uppercase;
+}
+
+# locationHeirarchy {
+	margin:10px; }
+
+# waterfallPage {
+	padding:0;
+	margin:0;
+	}
+
+h2 { padding:0px;
+	 margin:0px;
+	}
+
+h3 { padding:0px;
+	 margin:0px;
+	 text-transform:uppercase;
+	}	
+
+h4 { padding:0px;
+	 margin:0px;
+	 text-transform:uppercase;
+}
+
+.noStyleH1 {
+	color:#666666;
+	font-size:14px;
+	font-family: Trebuchet MS, Myriad, Myriad Pro, Arial, sans-serif;
+	}
+
+p {
+	font-family: Trebuchet MS, Myriad, Myriad Pro, Arial, sans-serif;
+	font-size: 14px;
+	text-align:left;
+}
+
+td {
+	height:auto;
+	clear:both;
+	}
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+
+.mainContent {
+	height:auto;
+	width:auto;
+	margin:auto;
+	padding: 0 10px;
+	text-align:left;
+	overflow:auto;
+	min-width:550px;
+}
+	
+.darkGreenBG {
+	background-color:#a7aaa1;
+	vertical-align:top;
+	height:auto;
+	margin:auto;
+	border-bottom:1px solid #FFFFFF;
+}
+.darkGreenAltBG {
+	background-color:#a0a39b;
+	vertical-align:top;
+	height:auto;
+	margin:auto;
+}
+
+.medGreenBG {
+	background-color:#c4c5b6;
+}
+
+.medGreenBG th {
+	font-weight:bold;
+	text-transform:uppercase;
+	color:#7d4900;
+}
+
+.ltGreenBG, #ltgreenbg {
+	background-color:#dfddc9;
+	text-align:left;
+}
+
+#sideBar {
+	color:#FFFFFF; }
+
+#ltgreenbg {
+	background-color:#dfddc9;
+	border:1px solid #000000;
+}
+
+.navButtonsCell {
+	background-image:url(graphics/header/navBarBG.gif);
+	background-repeat:repeat-x;
+	border-top:1px solid #FFFFFF;
+	border-bottom: 3px solid #cd9a29;
+}
+
+.boundingTableBorders {
+	border-left: 1px solid #FFFFFF;
+	border-right: 1px solid #FFFFFF;
+}
+
+#logoCell {
+	border-right:1px solid #ffffff;
+	text-align:left;
+}
+.sideBarTableAlignment {
+	text-align:left;
+}
+.sideBarTableAlignmentWithBorder {
+	text-align:left;
+	border:1px solid #000000;
+}
+
+
+.smallfont {
+	font-size: 9px;
+}
+.smallSidebarFont {
+	font-size:10px;
+	color:#FFFFFF; }
+
+.bookRatingScoreText {
+	font-family:Trebuchet MS, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-transform: uppercase;
+	font-weight:bold;
+	text-align: left;
+}
+
+.sidebarTopicText {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bold;
+	color:#FFFFFF; }
+
+.sidebarText {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#FFFFFF; }
+	
+.sidebarHeaderYellowFill {
+	font-family:Trebuchet MS, Arial, Helvetica, sans-serif;
+	background-color:#d7960b;
+	color:#FFFFFF;
+	font-size:16px;
+	font-weight:bold;
+	text-transform:uppercase;
+	text-align:left;
+	}
+	
+.sidebarHeaderOrangeFill {
+	font-family:Trebuchet MS, Arial, Helvetica, sans-serif;
+	background-color:#a36209;
+	color:#FFFFFF;
+	font-size:16px;
+	font-weight:bold;
+	text-transform:uppercase;
+	text-align:left;
+	}
+	
+.sidebarHeaderBrownFill {
+	font-family:Trebuchet MS, Arial, Helvetica, sans-serif;
+	background-color:#7d4900;
+	color:#FFFFFF;
+	font-size:16px;
+	font-weight:bold;
+	text-transform:uppercase;
+	text-align:left;
+	}
+
+.sidebarHeaderBlueFill {
+	font-family:Trebuchet MS, Arial, Helvetica, sans-serif;
+	background-color:#3a3b35;
+	color:#FFFFFF;
+	font-size:16px;
+	font-weight:bold;
+	text-transform:uppercase;
+	text-align:left;
+	}
+
+.redRowBG, .redRowBG1, .redRowBG2 {
+	background-color:#efd2d2; }
+.yellowRowBG, .yellowRowBG1, .yellowRowBG2 {
+	background-color:#f5f3e3; }
+.greenRowBG, .greenRowBG1, .greenRowBG2 {
+	background-color:#e0e9dc; }
+.blueRowBG, .blueRowBG1, .blueRowBG2 {
+	background-color:#dce5e9; }
+.purpleRowBG, .purpleRowBG1, .purpleRowBG2 {
+	background-color:#e3dce9; }
+.grayRowBG, .grayRowBG1, .grayRowBG2 {
+	background-color:#cbcbcb; }
+.brownRowBG, .brownRowBG1, .brownRowBG2 {
+	background-color:#d8cfc4; }	
+
+.redRowBG1, .yellowRowBG1, .greenRowBG1, .blueRowBG1, .purpleRowBG1, .grayRowBG1, .brownRowBG1 {
+	border:1px solid #808080;
+	font-size:13px; }
+	
+.redRowBG:Hover, .yellowRowBG:Hover, .greenRowBG:Hover, .blueRowBG:Hover, .purpleRowBG:Hover, .grayRowBG:Hover, .brownRowBG:Hover {
+	background-color:#F0F0F0;
+}
+.letterSorterCell {
+	padding-top:15px;
+	padding-bottom:15px;
+	border-bottom:1px solid #000000;
+	border-top:1px solid #000000; 
+	text-align:center;}
+.waterfallNameCaps {
+	text-transform:uppercase;
+	}
+	
+.grayGradientBG {
+	background-image:url(graphics/small%20graphics/gray_gradient.gif);
+	background-position:top;
+	background-repeat:repeat-x;
+	}
+
+/************************************************************************************************
+
+Navigation Menu Classes and Styles
+
+************************************************************************************************/
+# navMenuDiv {
+	padding:0;
+	margin:0;
+	clear:both;
+	float:none; }
+		
+/******************************************************************************************
+
+Navigation Bar Styles
+
+******************************************************************************************/
+	
+.navBarMenuItem {
+	font-family: Calibri, Myriad Pro, Myriad, Helvetica, sans-serif;
+	font-size:12px;
+	text-transform:uppercase;
+	text-align:center;
+	padding:5px;
+	color:#FFFFFF;
+	}
+
+/***************************************************************************
+
+STYLES FOR BREADCRUMB lINKS AT TOP OF WATERFALL PAGE
+
+***************************************************************************/
+
+.locationBreadcrumb {
+	margin:15;
+	padding:0;
+	font-size: 11px;
+	text-transform:uppercase;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+}
+
+/**********************************************************************
+
+STYLES FOR SITE DROP DOWN MENUS
+
+**********************************************************************/
+
+div.menu,
+div.menu a.menuItem,
+div.menu .page_item {
+  list-style:none;
+  text-align:left;
+}
+
+div.menu {
+  background-color: #cd9a29;
+  border: none;
+  left: 0px;
+  padding: 0px 1px 1px 0px;
+  position: absolute;
+  top: 0px;
+  visibility: hidden;
+  z-index: 101;
+  font-family: Calibri, Myriad Pro, Myriad, Helvetica, sans-serif;
+}
+
+div.menu a.menuItem, div.menu li.page_item a {
+  color: #ffffff;
+  cursor: default;
+  display: block;
+  padding: 3px 1em;
+  text-decoration: none;
+  white-space: nowrap;
+  text-align:left;
+}
+
+div.menu a.menuItem:hover, div.menu a.menuItemHighlight, div.menu li.page_item a:hover {
+  background-color: #a36209;
+  color: #ffffff;
+}
+
+div.menu a.menuItem span.menuItemArrow {
+  margin-right: -.75em;
+}
+
+/******************************************************************/
+
+#quickSearch {
+	vertical-align:middle;
+	margin:2px;
+	padding:3px;
+	border:none;
+	width:225px;
+	background-color:#FFFFFF;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#666666;	
+}
+
+#quickSearchForm {
+	display:block;
+	position:relative;
+	padding:0;
+	margin-top:0;
+	margin-left:4px;
+	margin-bottom:0;
+	margin-right:0;
+}
+
+.quickSearchButton {
+	vertical-align:middle;
+	width:auto;
+	margin:2px;
+	padding:3px;
+	border:none;
+	background-color:#c4c5b6;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#666666;
+}
+
+#sidebarMinWidth, #searchBox {
+	min-width:350px; }
+	
+.footer {
+	text-align:center;
+	left:center;
+	font-size:11px;
+	width:100%
+}
+
+#factBox {
+	background-image:url('graphics/small graphics/factBox_background_gradient.png');
+	background-repeat:repeat-x;
+	display:block;
+	position:relative;
+	left:center;
+	clear:both;
+	margin-top:15px;
+	margin-bottom:15px;
+}
+
+.hydro {
+	color:#42525e;
+	background-color:#dce5e9;
+}
+
+.seasonal {
+	color:#3a5240;
+	background-color:#f5f3e3;
+}
+
+.factBoxHeaderText {
+	size:15px;
+	font-weight:bold;
+	text-transform:uppercase;
+	vertical-align:middle;
+}
+
+.factBoxIcon {
+	position:inherit;
+	float:left;
+	margin-right:15px;
+	vertical-align:middle;
+}
+
+.factBoxContent {
+	min-height:48px;
+	position:relative;
+	margin:0; 
+	padding:15px;	
+}
+
+img.fallThumb {
+	position:relative;
+	margin-left:5px;
+	margin-right:15px;
+	margin-top:0;
+	margin-bottom:5px;
+	border:1px solid #000000; 
+	padding:5px; 
+	background-color:#FFFFFF;
+}
+
+.top100Numbers {
+	display:block;
+	float:left;
+	font-family: Haettenschweiler, Impact, "Arial Black";
+	font-size:50pt;
+	color:#dfddc9;
+	}
+	
+.top100Names {
+	display:block;
+	position:relative;
+	font-family: Geometr415 Md BT, Levenim MT, Aharoni, TW Cen MT, Trebuchet MS, Myriad, Verdana, Arial, sans-serif;
+	font-size:24px;
+	text-transform:uppercase;
+	left:-5px;
+	top:12px;
+	}
+
+#top100Location {
+	display:block;
+	position:relative;
+	left:15px;
+	top:15px;
+	font-family: Geometr415 Md BT, Levenim MT, Aharoni, TW Cen MT, Trebuchet MS, Myriad, Verdana, Arial, sans-serif;
+	font-size:14px;
+	text-transform:uppercase;
+	}
+	
+.top100Rating {
+	display:block;
+	position:relative;
+	float:right;
+	border: 1px solid #CCCCCC;
+	font-family: Geometr415 Md BT, Levenim MT, Aharoni, TW Cen MT, Trebuchet MS, Myriad, Verdana, Arial, sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	color:#3a5240;
+	background-color:#f5f3e3;
+	padding:10px;
+	top:15px;
+	}
+
+hr {
+	color:#ccc;
+	background-color:#ccc;
+	height:1px;
+	border:none;
+	margin-top:-1px;
+	}
+	
+ul {
+	display:block;
+	list-style-position:inside;
+	}
+	
+.navBarMenuSpacerCell {
+	font-size:1px;
+	}
+	
+.nextLetterLink {
+	font-size:20px;
+	padding:5px;
+	background-color:#7d4900;
+	border:1px solid #3a5240;
+	color:#FFFFFF;
+	text-decoration:none;
+	}
+	
+/********************************************************************************************************************
+
+/* STYLES FOR DIV TAG TABLES
+
+/********************************************************************************************************************/
+
+.div-table{display:table; border:1px solid #003399;}
+
+.div-table-caption{display:table-caption; background:#009999;}
+
+.div-table-col-caption{display:table-cell; padding: 5px; border: 1px solid #003399; background:#009999;}
+
+.div-table-row{display:table-row;}
+
+.div-table-col{display:table-cell; padding: 5px; border: 1px solid #003399;}

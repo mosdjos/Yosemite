@@ -49,6 +49,133 @@
       </div>
 	  <!-- /.container-fluid -->
   </nav>
+      <body>
+          <style>
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 10.03;
+  animation-name: fade;
+  animation-duration: 10.3s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 30px}
+}
+</style>
+<body>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="images/vernal-falls-in-morning-light%20(1).jpg" style="width:100%">
+    
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="images/wapama-falls-yosemite-177227342_1000x667.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="images/1-30.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="images/yosemite-nevada-falls-06.23.11.jpg" style="width:100%">
+</div>
+    
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>    
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 10000); // Change image every 10 seconds
+}
+</script>
+          </body>
 	<div class="container-fluid"></div>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 	<script src="js/jquery-1.11.3.min.js"></script>
@@ -57,3 +184,156 @@
 	<script src="js/bootstrap.js"></script>
   </body>
 </html>
+    
+<style>
+    blockquote {
+        display: block;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    img {
+        display: block;
+        margin: auto;
+    }
+</style>
+    
+
+    
+<h1 align="center">Yosemite Waterfalls</h1>
+    
+<html>
+    <body>
+        <article>
+            <blockquote align="center">Yosemite is known for the countless waterfalls that is has at its park. The best time to see the these waterfalls is durning the spring when the snow is melting. The peak runoff occurs in May or June, by August the water falls trickles or is completely dried out. When it storms some of the waterfalls are rejuvenated and in the winter you can see the edges of the water accumulate frost. The paved trails are open year round for the people to see Yosemite waterfalls or just to enjoy the scenery.</blockquote>
+        </article>
+
+<h1 align="center">Waterfalls At Yosemite</h1>
+        <article>
+    <br>
+            <h3 align="center">Bridalveil Fall</h3>
+            <p align="center" style="font-size: 100%" style="font-family: Times New Roman">620ft (190m)</p>
+             <blockquote align="center" style="font-size: 100%" style="font-family: Times New Roman">This waterfalls is often the first water you see while hiking the yosemite trails. The paved trails leads yout o the base of the waterfall. In the the paved trail is icy and has very slick conditions in the winter. It's famous for the mist that wafts off it when the breezes blow and which, according to the poetic, isolation-addled souls who get to name waterfalls, resembles a bridal veil. Hanging out at the base of the falls during peak runoff can be akin to taking a shower in a tornado, sans the flying cows.</blockquote>
+             <img src="images/bridalveil-fall.jpg" alt="Bridalveil Falls">
+    <br>
+            <h3 align="center">Chilnualna Falls</h3>
+            <p align="center" style="font-size: 100%" style="font-family: Times New Roman">690ft (210m)</p>
+            <blockquote align="center" style="font-size: 100%" style="font-family: Times New Roman">Along Yosemite's Chilnualna Falls Trail (near Wawona) lie a series of smooth, granite-walled swimming bowls that look as if they were shaped by a potter's hands. The first features thoughtfully placed underwater ledges but requires some scrambling to get to. The second is a primo spot even for preschoolers. You'll likely have this transcendent hole to yourselves, since it's not visible from the trail. Here, enormous sculpted boulders resembling water-filled dinosaur bones offer diving ledges and graduated basins. Bring insect repellent—stagnant pools just above the second bowl grow ferocious mosquitoes. And be careful: the granite can be slick, making the tubs hard to get in and out of, and spring runoff makes for swift-moving water. </blockquote>
+            <img src="images/ChilnualnaFalls.jpg" alt="chilnualna Falls">
+    <br>        
+            <h3 align="center">Horsetail Fall</h3>
+            <p align="center" style="font-size: 100%" style="font-family: Times New Roman">2,100ft (640m)</p>
+            <blockquote align="center" style="font-size: 100%" style="font-family: Times New Roman">The natural Firefall is one of Yosemite’s most amazing spectacles. Around the second week of February, the setting sun hits Horsetail Fall at just the right angle to illuminate the upper reaches of the waterfall. And when conditions are perfect, Horsetail Fall glows orange and red at sunset. Each year in late February, hundreds of spectators gather in Yosemite to witness this amazing event. But the Yosemite Firefall can be finicky. Although Horsetail Fall is visible from multiple viewpoints in Yosemite Valley, several factors must converge to trigger the Firefall. If conditions are not perfect, the Yosemite Firefall will not glow.</blockquote>
+            <img src="" alt="">
+    <br>         
+            <h3 align="center">Illilouette Falls</h3>
+            <p align="center" style="font-size: 100%" style="font-family: Times New Roman">370ft (110m)</p>
+            <blockquote align="center" style="font-size: 100%" style="font-family: Times New Roman">Besides being difficult to say, Illilouette Falls is famous for being among the most gorgeous falls you’ll see in Yosemite. At 370 feet, these falls are not as big or as well-known as the other falls here, but the heavy flow renders them spectacular, particularly during the spring and early summer (though the vantage point isn’t the greatest, even at the culmination of this trailhead). Even better, the hike itself is quite enjoyable, filled with pretty scenery, and a descent enough difficulty gradient that should make any hiker’s day. Other than that, you’ll also have some great views of Vernal and Nevada Falls, the Royal Arches, the back of Half Dome, and North Dome.</blockquote>
+            <img src="images/illilouette.jpg" alt="Illilouette Falls">
+    <br>        
+            <h3 align="center">Lehamite Fall</h3>
+            <p align="center" style="font-size: 100%" style="font-family: Times New Roman">1,180ft (360m)</p>
+            <blockquote align="center" style="font-size: 100%" style="font-family: Times New Roman">Lehamite Falls is a small volume waterfall located in a tributary gully to Indian Canyon near Yosemite Village in Yosemite National Park. The falls cascade a total of 1,180 feet down a slot in the granite cliff, first starting as rugged cascades with multiple distinct steps (how many is difficult to tell) and culminating in a horsetailing fall. Because it is difficult to approach the bottom of Lehamite Falls, the specifics of its shape and character are not known beyond what can be seen from the meadows in Yosemite Valley. Lehamite Creek drains from a small area to the west of Indian Ridge, and while the drainage basin has not been scoured out by glaciers such that there is soil to retain groundwater, the volume of Lehamite Creek is consistently insignificant and the falls usually run dry by the end of July as a result.	</blockquote>
+            <img src="images/Lehamite.jpg" alt="Lehamite Falls" style="width:256;height:384;">
+    <br>        
+            <h3 align="center">Nevada Fall</h3>
+            <p align="center" style="font-size: 100%" style="font-family: Times New Roman">594ft (181m)</p>
+            <blockquote align="center" style="font-size: 100%" style="font-family: Times New Roman">Yosemite Falls is undoubtedly the most famous of all of the magnificent waterfalls that you will find in Yosemite National Park. Nowhere else in the world will you find so many beautiful and varied waterfalls as you do in Yosemite Valley in the springtime. Every sheer cliff puts on its own pageant of free-leaping white water, each seeming to try to outdo the other waterfalls as it plunges earthward. Late in the spring and into the early summer, snows melting up in the high country fill streams to the tops of their banks. When this happens, the water in Yosemite Falls thunders from the edge of the valley and more than 2,000 feet down, shaking the valley walls. But this "performance" lasts only as long as the snow that feeds Yosemite Creek does. By late summer the snows have all melted away and the once booming Yosemite Falls becomes a trickle. It now leaves only a shadow of what it once was on the cliff wall.</blockquote>
+            <img src="images/Lower-Yosemite-Fall-Two.jpg" alt="Nevada Falls">
+    <br>        
+            <h3 align="center">Pywiack Cascade</h3>
+            <p align="center" style="font-size: 100%" style="font-family: Times New Roman">600ft (180m)</p>
+            <blockquote align="center" style="font-size: 100%" style="font-family: Times New Roman">The Pywiack Cascade is a waterfall in Yosemite National Park within the U.S. state of California. It is located a few miles downstream from the outlet of Tenaya Lake on Tenaya Creek at the head of the steep and rugged granite gorge, Tenaya Canyon. The waterfall can be viewed from Glacier Point, or by a 6-mile (9.7 km) hike from Olmstead Point,but the canyon is dangerous and the waterfall is unsafe to be reached on foot. The waterfall is highly seasonal, although it rarely stops flowing. It typically rages in the spring and early summer while shrinking to a trickle by late summer to mid-autumn.</blockquote>
+            <img src="images/Pywiack-Cascade.jpg" alt="Pywiack Cascade">
+    <br>        
+            <h3 align="center">Quaking Aspen Fall</h3>
+            <p align="center" style="font-size: 100%" style="font-family: Times New Roman">25ft (7.6m)</p>
+            <blockquote align="center" style="font-size: 100%" style="font-family: Times New Roman">"Quaking Aspen Falls" is a name I made up for this roadside waterfall on the Tioga Road (Route 120). The name came from the Yosemite Road Guide, which discussed quaking aspen corresponding to the pullout where this waterfall could be seen. I reckon this waterfall doesn't flow too far into the Summer since it's completely fed by melting snow from a drainage that doesn't cover a very large area. In any case, this is merely a roadside attraction and worth a brief stop to get out of the car, stretch, and smell the alpine air of Yosemite's High Country. </blockquote>
+            <img src="images/Quaking-Aspen-Fall.jpg" alt="Quaking Aspen Fall">
+    <br>        
+            <h3 align="center">Ribbon Fall</h3>
+            <p align="center" style="font-size: 100%" style="font-family: Times New Roman">1,612ft (491m)</p>
+            <blockquote align="center" style="font-size: 100%" style="font-family: Times New Roman">Ribbon Creek drains an area of about 4 square miles immediately to the west of El Capitan, the collective waters of which intersect Yosemite Valley about 3,000 feet above the valley floor. As the creek runs off the edge of the valley, it carries down a slightly corkscrew-shaped plain of rock which causes the falls to twist off axis and fall to the right of its original course. The stream stays in contact with the cliff face for perhaps the first 200-300 vertical feet of the falls, and then free-falls for over one thousand feet before it sprays onto a steep skirt of the cliff face and veils the final distance to the bottom of the cliff. This contact with the cliff disqualifies Ribbon Fall from being considered a truly free-falling waterfall in that it does retain some contact with the cliff face, however the fall is entirely uninterrupted (i.e. there are no pools or pauses in the fall), so it is still appropriate to consider it to be the tallest uninterrupted waterfall in the country. Ribbon Fall occupies a deep alcove directly to the west of the massive granite monolith El Capitan and because the falls cannot be easily seen from many of the signature views around Yosemite Valley, they are not regarded nearly as highly as Yosemite Falls or - especially - Bridalveil Fall which is situated directly across the valley. But also because Ribbon Creek drains from such a small area, it retains a consistent flow for only about half of the year, usually peaking in volume between mid April and mid May, and then quickly diminishing and running completely dry by July at the latest in most years (if not earlier).</blockquote>
+            <img src="images/05-Falls.jpg" alt="Ribbon Falls">
+    <br>        
+            <h3 align="center">Royal Arch Cascade</h3>
+            <p align="center" style="font-size: 100%" style="font-family: Times New Roman">1,250ft (380m)</p>
+            <blockquote align="center" style="font-size: 100%" style="font-family: Times New Roman">Ribbon Creek drains an area of about 4 square miles immediately to the west of El Capitan, the collective waters of which intersect Yosemite Valley about 3,000 feet above the valley floor. As the creek runs off the edge of the valley, it carries down a slightly corkscrew-shaped plain of rock which causes the falls to twist off axis and fall to the right of its original course. The stream stays in contact with the cliff face for perhaps the first 200-300 vertical feet of the falls, and then free-falls for over one thousand feet before it sprays onto a steep skirt of the cliff face and veils the final distance to the bottom of the cliff. This contact with the cliff disqualifies Ribbon Fall from being considered a truly free-falling waterfall in that it does retain some contact with the cliff face, however the fall is entirely uninterrupted (i.e. there are no pools or pauses in the fall), so it is still appropriate to consider it to be the tallest uninterrupted waterfall in the country. Ribbon Fall occupies a deep alcove directly to the west of the massive granite monolith El Capitan and because the falls cannot be easily seen from many of the signature views around Yosemite Valley, they are not regarded nearly as highly as Yosemite Falls or - especially - Bridalveil Fall which is situated directly across the valley. But also because Ribbon Creek drains from such a small area, it retains a consistent flow for only about half of the year, usually peaking in volume between mid April and mid May, and then quickly diminishing and running completely dry by July at the latest in most years (if not earlier).</blockquote>
+            <img src="images/Royal-Arch-Cascade.jpg" alt="Royal Arch Cascade">
+    <br>        
+            <h3 align="center">Sentinel Fall</h3>
+            <p align="center" style="font-size: 100%" style="font-family: Times New Roman">1,920ft (590m)</p>
+            <blockquote align="center" style="font-size: 100%" style="font-family: Times New Roman">Sentinel Fall is the tallest waterfall on the south side of Yosemite Valley and the second tallest waterfall in Yosemite National Park at just shy of 2,000 feet. Sentinel Creek drains from a small basin along the Glacier Point Road and intersects Yosemite Valley at an elevation of over 7,200 feet above sea level. The falls consist nine distinct steps ranging from 50 to 500 feet in height, with four of them dropping at least 200 feet each, but due to the immense size of the falls and the lack of easy up-close access, the exact height of each tier is difficult to determine. Sentinel Creek has the largest drainage basin of the more minor waterfalls in Yosemite Valley, and coupled with substantial soil retention through the basin the stream manages to flow for longer periods than any other seasonal waterfall in the valley. However even during exceptionally heavy snow years the falls will shrink and dry out entirely by August, though it usually runs dry July. On our most recent survey the falls were only a few weeks from drying out in mid-May of 2013 (a year with abnormally low snowfall in the Sierra). Regarding how the falls have been mapped, the USGS Half Dome quadrangle shows Sentinel Creek flowing to the northeast of a small domed knoll at about the 7360 foot mark just above the falls. Photographs of Sentinel Falls however show the creek breaking into Yosemite Valley to the southwest of this knoll. While this doesn't indicate the falls to be any taller than previously thought, it does explain why the falls do not appear to dogleg to the left immediately after the first tier of the fall.</blockquote>
+            <img src="images/Sentinel-Falls.jpg" alt="Sentinel Fall">
+    <br>        
+            <h3 align="center">Silver Strand Fall</h3>
+            <p align="center" style="font-size: 100%" style="font-family: Times New Roman">574ft (175m)</p>
+            <blockquote align="center" style="font-size: 100%" style="font-family: Times New Roman">Silver Strand Falls is the western-most waterfall within Yosemite National Park's Yosemite Valley. Meadow Brook drains from a small basin north of Badger Pass and enters Yosemite Valley via this fall between Old Inspiration Point and Stafford Point. The basin feeding the falls is small and though during the melt season the volume can be significant enough that the falls are rather impressive, Meadow Brook will consistently run dry by the middle of July during heavier snow years, and may be dry by early June during drier years when the snow melts off earlier. Most citations of Silver Strand Falls incorrectly suggest a height of 1,170 feet. Like many of the other waterfalls in Yosemite Valley, it is thought that this figure was arrived at by USGS surveyor Francois Matthes in 1916, but while virtually every waterfall that Matthes measured nearly 100 years ago seems to have been measured accurately, the height he listed for Silver Strand Falls does not align with reality. The current USGS El Capitan quadrangle shows the actual height of the falls at about half of Matthes' figure, something around 560 feet, and Google Earth's current terrain model supports this conclusion. Ice climbers have reported the falls to stand 574 feet, so there seems to be enough general consensus on a rough estimate to confirm Matthes to be wrong with his measurement. How Matthes arrived at his measurement is a mystery and may never really be known - chances are it was simply a poor estimate.</blockquote>
+            <img src="images/Silver-Strand-Fall.jpg" alt="Silver Strand Fall">
+    <br>        
+            <h3 align="center">Snow Creek Fall</h3>
+            <p align="center" style="font-size: 100%" style="font-family: Times New Roman">2,140ft (650m)</p>
+            <blockquote align="center" style="font-size: 100%" style="font-family: Times New Roman">Snow Creek Falls is a booming chain of horsetails and cascades which enters Tenaya Canyon above Mirror Lake in one of Yosemite Valley's most boisterous waterfalls. The falls are commonly said to be 2,000 feet tall and after examining the topography of the area, we concluded the total drop of Snow Creek from the rim of Yosemite Valley to the base of the falls to be even greater than that. However, upon further examination of the course of Snow Creek, we felt it necessary to segregate its waterfalls into two entries. Where Snow Creek enters Tenaya Canyon at an elevation of about 6500 feet, it drops down what we are referring to as Upper Snow Creek Falls - a multi-step fall of about 700 feet. From an elevation of about 5800 feet down to 5000 feet, the stream cascades steeply down the boulder-strewn gorge such that it simply cannot be considered to be part of a waterfall given the makeup of this section of the gorge. Additionally, this stretch constitutes a linear run of over one third of a mile between the bottom of Upper Snow Creek Falls and the top of Snow Creek Falls - a distance far too great for the two sections of falls to be considered one congruent series of falls. At the 5000 foot mark, where Snow Creek Falls proper begins, the creek plunges down seven distinct steps, with the upper drops falling more vertically and the lower tiers taking on more of a sliding horsetail form. The second and largest tier produces a waterwheel of substantial size during the spring, and were it more easily accessible it might be known as well as those seen at LeConte and Waterwheel Falls along the Tuolumne River further to the north. The total drop of the formation is around 600 feet. We should also note that the USGS Half Dome quadrangle marks Snow Creek Falls as occurring at roughly 5240 feet. We have not seen any evidence to suggest that there are legitimate sections of the falls above the 5000 foot level, so this appears to be more a generic mapping error than anything else. Snow Creek is among the largest tributaries of Yosemite Valley and its substantial drainage basin allows it to flow with immense force and consistency through the spring and early summer months. However, like Yosemite Creek to the west, because the basin is composed of almost entirely solid granite bedrock, Snow Creek will usually dry out entirely by the end of August (if not earlier) despite being fed by a large lake at its headwaters.	</blockquote>
+            <img src="images/Snow%20Creek%20Fall.jpg" alt="Snow Creek Fall">
+    <br>        
+            <h3 align="center">Staircase Fall</h3>
+            <p align="center" style="font-size: 100%" style="font-family: Times New Roman">1,020ft (310m)</p>
+            <blockquote align="center" style="font-size: 100%" style="font-family: Times New Roman">While Vernal Fall isn't displayed quite so prominently in Yosemite Valley as are Bridalveil and Yosemite Falls, Vernal is most certainly among the most popular and frequently visited waterfalls in Yosemite National Park, if not all of California. Accompanied by Nevada Fall, its upstream sibling, the two lofty cataracts are known as The Giant Steps - a title drawing from the very distinct glacially carved cliffs over which the falls plunge almost back-to-back. While Nevada Fall maintains contact with its cliff for the majority of its fall, Vernal Fall is a truly free-falling waterfall and thanks to the large volume of the Merced River it is both the most powerful and broadest free-falling waterfall in California. Like Nevada, Vernal Fall was first properly examined by USGS surveyor Francois Matthes in or around 1913, at which time he determined the height of the falls to be 317 feet, and that measurement has been assumed to be accurate ever since. However, topographic maps make it seem almost abundantly clear that this figure could not be physically possible and instead indicate the height of the falls to be more like 200-230 feet. Given what the Topo maps show, we were quite skeptical that a measurement taken 100 years ago would prove to be accurate, yet when we surveyed the falls in May of 2013 we measured the falls to stand 309 feet tall, so Matthes' figure of 317 feet is not only within an acceptable margin of error, but is simply too close to our measurement to assume it to not be accurate. Why the discrepancy between Matthes' figure and the Topo maps exists is unclear, but given the USGS isn't known for high accuracy when it comes to showing waterfalls on their maps, we'll just chalk it up to the fact that there hasn't been a substantial updating of the contour data in Yosemite in a long time. Because of its popularity Vernal Fall is also among the most deadly waterfalls in California. Since 1924 at least 17 people have been swept over the falls after having strayed too close to the river and more may have fallen victim to the river below the falls as well. Most recently in 2011 a group of three crossed the guard rail at the top of the fall to pose for a picture closer to the river, and all three lost their footing, slid into the river and were swept to their death while hundreds of onlookers watched helplessly. When visiting Vernal Fall, please heed all warning signs and stay within the guard rails where provided.	</blockquote> 
+            <img src="images/staircase_falls.jpg" alt="Staircase Falls ">
+    <br>        
+            <h3 align="center">Three Chute Fall</h3>
+            <p align="center" style="font-size: 100%" style="font-family: Times New Roman">80ft (24m)</p>
+            <blockquote align="center" style="font-size: 100%" style="font-family: Times New Roman">Tenaya Falls is a very modest waterfall by Yosemite standards, but as it is also not exactly advertised and there is no official trail leading to it, few people ever visit despite its relatively close proximity to the busiest parts of Yosemite Valley. At the falls Tenaya Creek sheets over a long, gradually slanting protrusion of granite which features several deep groves. These cracks cause the creek to split into as many as five channels, and when the water reaches the edge of the shelf, it plunges in side-by-side falls, ranging from 40 feet on the far right to 88 feet on the far left, with another seasonal channel splitting off further to the west (which doesn't fall so much as cascade). Below the falls Tenaya Creek makes a sharp horseshoe bend around a buttress of rock which both obstructs views of the falls from further downstream and makes it difficult to photograph the falls in entirety. Three Chute Falls is also known as Tenaya falls.</blockquote> 
+            <img src="images/Three_Chute_Fall.jpg" alt="Three Chute Fall">
+    <br>        
+            <h3 align="center">Tueeulala Fall</h3>
+            <p align="center" style="font-size: 100%" style="font-family: Times New Roman">840ft (260m)</p>
+            <blockquote align="center" style="font-size: 100%" style="font-family: Times New Roman">Tueeulala Falls is one of two major waterfalls in the Hetch Hetchy Valley which can be seen from the Hetch Hetchy Dam. The USGS has marked the falls as occurring along an unnamed seasonal stream about half of a mile west of Wapama Falls but this is incorrect. Tueeulala Falls actually occurs along a seasonal channel of Falls Creek, the main portion of which produces Wapama Falls just to the east. When Falls Creek is swollen with snow melt, some of the excessive volume of the creek spills into a second channel about a quarter mile upstream of the top of Wapama Falls. This second channel runs for approximately 3/4 of a mile to the southwest where it then turns south and plunges a nearly sheer 880 feet over the sheer cliff to the west of Wapama Falls. Because Tueeulala Falls is fed solely by Falls Creek, one of the largest tributaries of the Tuolumne River, it's seasonal characteristics behave quite differently than an independently fed stream. Falls Creek can swell to immense size in the spring that large quantities of water can spill into the Tueeulala Falls channel, allowing it to turn into one of Yosemite's more powerful waterfalls. However, as the snow melt subsides and the volume of Falls Creek drops, Tueeulala Falls will diminish in flow faster than practically any other major waterfall in the park. In most years the falls are dry by July but they have been known to flow through July during years with exceptionally heavy snow, and dry out entirely by the end of May in low snow years. Both Tueeulala Falls and Wapama Falls have been said to have been truncated by the construction of the O'Shaughnessey Dam and Hetch Hetchy Lake. While it is certainly true that the lake flooded portions of Falls Creek below each of these waterfalls, neither Tueeulala Falls nor Wapama Falls were altered or shortened in any way by the construction of the dam. Estimates of the height of the falls have often stretched as high as 1,200 feet but this is simply a gross exaggeration. Topographic data is pretty clear on the height of the falls being between 850 and 900 feet.
+</blockquote> 
+            <img src="images/Tueeulala_Falls_02_004L.jpg" alt="Tueeulala Fall">
+    <br>        
+            <h3 align="center">Vernal Fall</h3>
+            <p align="center" style="font-size: 100%" style="font-family: Times New Roman">317ft (97m)</p>
+            <blockquote align="center" style="font-size: 100%" style="font-family: Times New Roman">While Vernal Fall isn't displayed quite so prominently in Yosemite Valley as are Bridalveil and Yosemite Falls, Vernal is most certainly among the most popular and frequently visited waterfalls in Yosemite National Park, if not all of California. Accompanied by Nevada Fall, its upstream sibling, the two lofty cataracts are known as The Giant Steps - a title drawing from the very distinct glacially carved cliffs over which the falls plunge almost back-to-back. While Nevada Fall maintains contact with its cliff for the majority of its fall, Vernal Fall is a truly free-falling waterfall and thanks to the large volume of the Merced River it is both the most powerful and broadest free-falling waterfall in California. Like Nevada, Vernal Fall was first properly examined by USGS surveyor Francois Matthes in or around 1913, at which time he determined the height of the falls to be 317 feet, and that measurement has been assumed to be accurate ever since. However, topographic maps make it seem almost abundantly clear that this figure could not be physically possible and instead indicate the height of the falls to be more like 200-230 feet. Given what the Topo maps show, we were quite skeptical that a measurement taken 100 years ago would prove to be accurate, yet when we surveyed the falls in May of 2013 we measured the falls to stand 309 feet tall, so Matthes' figure of 317 feet is not only within an acceptable margin of error, but is simply too close to our measurement to assume it to not be accurate. Why the discrepancy between Matthes' figure and the Topo maps exists is unclear, but given the USGS isn't known for high accuracy when it comes to showing waterfalls on their maps, we'll just chalk it up to the fact that there hasn't been a substantial updating of the contour data in Yosemite in a long time. Because of its popularity Vernal Fall is also among the most deadly waterfalls in California. Since 1924 at least 17 people have been swept over the falls after having strayed too close to the river and more may have fallen victim to the river below the falls as well. Most recently in 2011 a group of three crossed the guard rail at the top of the fall to pose for a picture closer to the river, and all three lost their footing, slid into the river and were swept to their death while hundreds of onlookers watched helplessly. When visiting Vernal Fall, please heed all warning signs and stay within the guard rails where provided.	</blockquote> 
+            <img src="images/Vernal%20Fall.jpg" alt="Vernal Fall">
+    <br>        
+            <h3 align="center">Wapama Fall</h3>
+            <p align="center" style="font-size: 100%" style="font-family: Times New Roman">1,700ft (520m)</p>
+            <blockquote align="center" style="font-size: 100%" style="font-family: Times New Roman">Wapama Falls is the second most powerful waterfall in California after Yosemite Falls and have been rightly dubbed "the Yosemite Falls of Hetch Hetchy". The falls occur along Falls Creek as it chutes and plunges towards Hetch Hetchy Lake, dropping about 1,300 feet. From below and even from the O'Shaughnessey Dam, it appears that Wapama Falls consists very distinct steps, however the falls are actually one continuous fall which begins as a long horsetail pitched at about 60 degrees, which then becomes less steep in a concave manor, and then before flattening out entirely pitches into a nearly vertical fall of about 375 feet, which explodes into a tempest of spray on a slope of nearly house-sized boulders where the creek flows the rest of the way into Hetch Hetchy Reservoir. Because Falls Creek possesses one of the largest drainage basins in the upper Tuolumne River watershed it flows powerfully for the majority of the year, and retains the most flow of any of the major waterfalls in Yosemite (with the exception of the falls on the Tuolumne River itself) throughout the year, though like all waterfalls in Yosemite National Park will exhibit seasonal fluctuations in volume. Visitors who attempt to hike to the falls too early in the season will find the trail closed because Falls Creek will actually spill over the bridges which cross below the base of the falls. Even when the trail is open, the deluge of spray ejected by the falls can literally be blinding at times - though exceptionally refreshing on a hot summer afternoon. When Falls Creek runs high with snow melt, a portion of its volume spills into another channel about a quarter mile above the top of Wapama Falls and forms the neighboring Tueeulala Falls. Both Tueeulala Falls and Wapama Falls have been said to have been truncated by the construction of the O'Shaughnessey Dam and Hetch Hetchy Lake. While it is certainly true that the lake flooded portions of Falls Creek below each of these waterfalls, neither Tueeulala Falls nor Wapama Falls were altered or shortened in any way by the construction of the dam. Estimates of the height of Wapama Falls have often stretched as high as 1,700 feet under the assumption that part of the falls is submerged, but this is a gross exaggeration as the difference between the top of the falls and the lake is only about 1,500 feet, and the final 160 feet (at least) of that elevation change represents talus cascades which do not qualify as part of the waterfall.</blockquote> 
+            <img src="images/wapama-falls-lower-700w.jpg" alt="Wapama Fall">
+    <br>        
+            <h3 align="center">Waterwheel Fall</h3>
+            <p align="center" style="font-size: 100%" style="font-family: Times New Roman">300ft (91m)</p>
+            <blockquote align="center" style="font-size: 100%" style="font-family: Times New Roman">Waterwheel Falls is the final and tallest of the five major, named waterfalls along the Grand Canyon of the Tuolumne. The falls drop about 360 feet over a run of about 1,000 feet. Its possible there may actually be two or three distinct steps to the falls, but there are so few pictures around the internet which adequately illustrate the structure of the falls that having not visited the falls in person we just don't know for sure.</blockquote> 
+            <img src="images/Waterwheel%20Fall.jpeg" alt="Waterwheel Fall">
+    <br>        
+            <h3 align="center">Wildcat Fall</h3>
+            <p align="center" style="font-size: 100%" style="font-family: Times New Roman">630ft (190m)</p>
+            <blockquote align="center" style="font-size: 100%" style="font-family: Times New Roman">Wildcat Falls is the first waterfall encountered on the north wall of Merced Gorge as one enters Yosemite National Park from El Portal and the Arch Rock entrance along Highway 140. Wildcat Creek drains an area of about a square mile between Cascade Creek and Big Meadow, dropping into the Merced Gorge in five-tiered fall totaling about 700 feet in height. The uppermost tier, which starts in a slide then spreads into a nearly vertical veil before making a hard left turn and constricting, is the most difficult to see thanks to heavy vegetation around the stream. The second tier is a sheer plunge of about 150 feet, followed by a second drop of about 150 feet which begins sliding and becomes a sheer. The final two tiers are steep cascading style sections set amid heavy timber, the lowest of which drops 49 feet (the only measurement we were able to take on our most reason survey), and cannot be seen collectively with the upper tiers of the falls. Due to the small drainage area that Wildcat Creek possesses, the falls will run consistently for the spring months but rarely flow beyond the beginning of July. This low volume has also allowed thick brush to encroach on parts of the falls, restricting views from many areas. While the falls can be easily seen from Highway 140 when entering the park from El Portal, only a portion of the falls can be seen at any given time, and at no point or position is the entire waterfall visible.</blockquote> 
+            <img src="images/wildcat_falls1A_big.jpg" alt="Wildcat Falls">
+    <br>        
+            <h3 align="center">Yosemite Fall</h3>
+            <p align="center" style="font-size: 100%" style="font-family: Times New Roman">2,425ft (739m)</p>
+            <blockquote align="center" style="font-size: 100%" style="font-family: Times New Roman">Yosemite Falls is the tallest waterfall in the state of California, dropping a total of 2,425 feet. The falls are commonly said to consist of three parts, but actually are made up of five distinct plunges and one section of cascades. Yosemite Creek enters the falls by plunging 1,430 feet over the massive Upper Yosemite Fall (when referenced by itself, the singular form is used). At the base of the upper fall, the creek sprays widely over a bedrock bench and begins flowing towards the narrow gorge just downstream. In a run of about 800 linear feet the stream drops over a series of small falls and cascades, losing about 240 feet in elevation. The second major fall, where Yosemite Creek enters the gorge proper, drops nearly vertically for about 250 feet, followed shortly by the third fall of about 120 feet and the fourth fall of about 50 feet. The fourth fall terminates almost immediately above the top of Lower Yosemite Fall (again, singular when referenced independently) which itself drops 329 feet (this was the only section of the falls we were able to accurately measure on our most recent survey). The falls and cascades between the bottom of the Upper Falls and the top of the Lower Falls are often referred to as Middle Cascades, however this is essentially a deceitful name as there is only one section of this part of the falls can legitimately be qualified as Cascading type falls. Unfortunately the only place that all six parts of the falls can be seen is from the Pohono Trail and in the vicinity of Sentinel Dome near Glacier Point. We should also note that according to photographer and former park ranger Mike Osborne's excellent book "Granite, Water and Light: The Waterfalls of Yosemite Valley" the measured height of Yosemite Falls apparently stems from the first USGS survey of the valley by geologist Francois Matthes in 1913. The process by which he measured the valley's waterfalls was not documented in his studies and simply because these measurements were taken over a century ago their accuracy should be called into question. The current USGS topographic maps support Matthes' measurements, but to what degree of accuracy is not yet known. We don't have any reason to think the original measurements are grossly inaccurate however. In addition to being California's tallest waterfall, Yosemite Falls is commonly claimed to be both the tallest waterfall in the United States and in North America. Given that Yosemite's height takes into account six distinct leaps, we must consider other waterfalls which do not drop in one single fall against this claim, in which case there are several waterfalls in Canada, Hawaii and one in Washington State which are taller than Yosemite. If the qualifier is only those waterfalls with a sheer drop, then the 1,430 foot drop of Upper Yosemite Fall is bested by neighboring Ribbon Fall just a few miles to the west, so while the popular conception is that Yosemite is king, in reality it is only the top dog in California, not in all of the USA. Due to the fact that the Sierra Nevada range is composed almost entirely of glaciated granite and contains little soil to retain precipitation and runoff, the waterfalls in Yosemite National Park exhibit a behavior we refer to as "The Yosemite Effect". Essentially without soil to promote groundwater retention, precipitation has the tendency to run off extremely fast, so once the winter snowpack has melted and the rain has stopped for the season the volume of the streams in the area dwindle very quickly. This becomes especially clear when looking at the average volume of Yosemite Creek over the year. The USGS gauge at Yosemite Creek was only active for 6 years between 1912 and 1918, but it provided what should be a ballpark for the typical flows that the creek sees. In April, May, and June, the creek averages about 307 cubic feet per second. But for the remaining 9 months out of the year, its flow averages just 16 cubic feet per second, and it drops to just one cubic foot per second in October and November (per the limited gauge statistics at least). These figures may not be entirely accurate 100 years later, because the creek has been known to run entirely dry in the summer during dry years in modern times. That the falls do not flow consistently all year long is the only factor that prevents Yosemite Falls from scoring in the absolute highest margins of our rating system.</blockquote> 
+            <img src="images/Yosemite-Fall.jpg" alt="Yosemite Fall">
+        </article>
+    </body>    
+</html>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+<footer class="row">
+      <div class="col-lg-12">
+        <p>Completed Mission 1 @ Awesome </p>
+      </div>
+    </footer>
